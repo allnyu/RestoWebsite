@@ -11,6 +11,7 @@ html{
 /* header */
 header{
     width: 100%;
+    height: 150px;
 }
 nav{
     display: flex;
@@ -63,7 +64,7 @@ header img:hover{
     align-items: center;
     justify-content: space-evenly;
     position: relative;
-    padding-top: 150px;
+    /* padding-top: 150px; */
 }
 .main h1{
     font-size: 15px;
@@ -221,7 +222,6 @@ footer{
     }
     .main h1{
         font-size: 35px;
-        left: 20px;
     }
     .main h1 span{
         font-size: 40px;
@@ -237,9 +237,7 @@ footer{
     }
     .menu img{
         margin: 0 10px 10px;
-    }
-    .menu p{
-        font-size: 18px;
+        max-width: 50%;
     }
     footer{
         font-size: 12px;
@@ -257,7 +255,6 @@ footer{
     }
     .main h1{
         font-size: 45px;
-        left: 20px;
     }
     .main h1 span{
         font-size: 50px;
@@ -272,9 +269,6 @@ footer{
     }
     .menu p{
         font-size: 20px;
-    }
-    .menu img{
-        max-width: 50%;
     }
     footer{
         font-size: 15px;
@@ -292,7 +286,6 @@ footer{
     }
     .main h1{
         font-size: 55px;
-        left: 20px;
     }
     .main h1 span{
         font-size: 60px;
@@ -304,7 +297,7 @@ footer{
         font-size: 35px;
     }
     .menu p{
-        font-size: 28px;
+        font-size: 24px;
         margin: 0 30px;
     }
     footer{
@@ -323,13 +316,20 @@ footer{
     }
     .main h1{
         font-size: 60px;
-        left: 30px;
     }
     .main h1 span{
         font-size: 70px;
     }
+    .main{
+        margin: 0 100px;
+    }
+    .menu{
+        margin: 0 100px;
+    }
     .imgp img{
-        max-width: 45%;
         margin: 0 20px 20px;
+    }
+    .menu p{
+        font-size: 25px;
     }
 }
