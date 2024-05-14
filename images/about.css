@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'courier new';
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #123456;
+    min-height: 100vh;
+}
+/* header */
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 10px #000000;
+    padding: 0px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    background-color: #123456;
+}
+nav img{
+    max-width: 170px;
+    cursor: pointer;
+    margin: 5px;
+    transition: 0.3s;
+}
+nav img:hover{
+    transform: scale(1.2);
+}
+.navbar{
+    list-style: none;
+}
+.navbar li{
+    display: inline-block;
+}
+.navbar li a{
+    font-size: 20px;
+    color: #ffffff;
+    padding: 10px;
+    display: block;
+}
+.navbar li a:hover{
+    background: #a3acbd;
+    color: #123456;
+    font-weight: 600;
+}
+#menu-bar{
+    display: none;
+}
+nav label{
+    font-size: 20px;
+    color: #ffffff;
+    cursor: pointer;
+    display: none;
+}
+
+/* section_main */
+.about_main{
+    margin: 0 20px;
+    padding-top: 120px;
+}
+.about_main h1{
+    color: #ffffff;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    text-decoration: underline;
+}
+.about_sub{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+}
+.about_sub img{
+    max-width: 100%;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.about_sub p{
+    font-size: 15px;
+    color: #ffffff;
+    margin: 10px 0;
+}
+
+/* footer */
+footer{
+    width: 100%;
+    background: #123456;
+    text-align: center;
+    position: relative;
+    top: 70px;
+    box-shadow: 0 0 10px #000000;
+    padding: 10px;
+    font-size: 10px;
+    color: #ffffff;
+}
+.footer_main h4{
+    font-size: 15px;
+}
+.footer_sub{
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer_icon{
+    padding: 10px;
+}
+.footer_icon i{
+    padding: 5px;
+    font-size: 20px;
+    transition: 0.3s;
+}
+.footer_icon i:hover{
+    transform: scale(1.3);
+}
+#fb_icon{
+    color: #ffffff;
+}
+#yt_icon{
+    color: #ffffff;
+}
+.footer_link{
+    padding: 10px;
+}
+.footer_link p{
+    padding: 5px 0;
+    transition: 0.3s;
+}
+.footer_link p:hover{
+    transform: scale(1.3);
+    font-weight: 800;
+}
+.footer_link a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.footer_contact{
+    padding: 10px;
+}
+.footer_contact p{
+    padding: 5px 0;
+}
+.footer_contact i{
+    color: #ffffff;
+    padding: 0 5px;
+}
+.credit{
+    font-size: 10px;
+}
+
+/* media query */
+@media (max-width:768px){
+    nav label{
+        display: initial;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #123456;
+        border-top: 1px solid #000000;
+        box-shadow: 0 5px 5px #000000;
+        display: none;
+        text-align: center;
+    }
+    .navbar li{
+        width: 100%;
+    }
+    #menu-bar:checked ~ .navbar{
+        display: initial;
+    }
+}
+
+@media (min-width:576px){
+    .footer_main{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .about_sub img{
+        width: 90%;
+    }
+}
+
+@media (min-width:768px){
+    .about_main h1{
+        font-size: 30px;
+    }
+    .about_sub p{
+        font-size: 18px;
+    }
+    .about_sub img{
+        max-width: 80%;
+    }
+    footer{
+        font-size: 12px;
+    }
+    .footer_main h4{
+        font-size: 18px;
+    }
+    .footer_icon i{
+        font-size: 25px;
+    }
+    .credit{
+        font-size: 12px;
+    }
+}
+
+@media (min-width:992px){
+    .about_main{
+        margin: 0 30px;
+    }
+    .about_sub{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .about_sub img{
+        max-width: 40%;
+        margin-right: 10px;
+    }
+}
+
+@media (min-width:1200px){
+    .about_main{
+        margin: 0 100px;
+    }
+    .about_main h1{
+        font-size: 40px;
+    }
+    .about_sub img{
+        max-width: 45%;
+    }
+    .about_sub p{
+        font-size: 20px;
+    }
+    footer{
+        font-size: 15px;
+    }
+    .footer_main h4{
+        font-size: 20px;
+    }
+    .footer_icon i{
+        font-size: 30px;
+    }
+    .credit{
+        font-size: 15px;
+    }
+}
