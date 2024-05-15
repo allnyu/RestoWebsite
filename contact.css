@@ -248,6 +248,9 @@ footer{
     section p{
         font-size: 20px;
     }
+    .reserve{
+        padding-bottom: 10px;
+    }
     footer{
         font-size: 15px;
     }
