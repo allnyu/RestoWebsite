@@ -11,7 +11,10 @@ html{
 body{
     background-color: #222e50;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
+
 /* header */
 nav{
     position: fixed;
@@ -98,7 +101,8 @@ footer{
     background: #222e50;
     text-align: center;
     position: relative;
-    top: 150px;
+    margin-top: auto;
+    bottom: 0;
     box-shadow: 0 0 10px #000000;
     padding: 10px;
     font-size: 10px;
